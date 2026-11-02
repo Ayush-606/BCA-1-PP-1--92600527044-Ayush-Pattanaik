@@ -6,8 +6,8 @@
 int fibo(int n);
 
 int fibo(int n){
-    int a = 0, b = 1, c,i;
-    for(i = 1; i <= n; i++){
+    int a = 0, b = 1, c;
+    while(a<=n){
         printf("%d ", a);
         c = a + b;
         a = b;
@@ -19,7 +19,7 @@ int fibo(int n){
 void main(){
     int x;
     clrscr();
-    printf("\nEnter Number:");
+    printf("\nEnter Limit:");
     scanf("%d",&x);
     fibo(x);
     getch();
