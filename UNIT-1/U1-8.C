@@ -4,11 +4,14 @@
 #include<conio.h>
 
 void main(){
-    int n, a = 0, b = 1, c,i;
+    int n, a = 0, b = 1, c;
     clrscr();
-    printf("Enter number of terms: ");
+    printf("Enter Limit: ");
     scanf("%d", &n);
-    for(i = 1; i <= n; i++){
+
+    printf("Fibonacci series up to %d:\n", n);
+
+    while(a<=n){
         printf("%d ", a);
         c = a + b;
         a = b;
