@@ -7,6 +7,7 @@ int fibo(int n);
 
 int fibo(int n){
     int a = 0, b = 1, c;
+    printf("Fibonacci series up to %d:\n", n);
     while(a<=n){
         printf("%d ", a);
         c = a + b;
