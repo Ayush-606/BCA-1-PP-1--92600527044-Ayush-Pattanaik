@@ -7,7 +7,9 @@ void main() {
     int i;
     clrscr();
     for (i = 200; i >= 180; i--) {
-        printf("%d ", i);
+        if(i%2==0){
+            printf("%d ", i);
+        }
     }
     getch();
 }
